@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Our Team</title>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Comforter+Brush&family=Dancing+Script:wght@600&family=Kaushan+Script&family=Montserrat:wght@300&family=Notable&family=Nunito+Sans:ital,wght@1,600&family=Oswald&family=Pacifico&family=Poor+Story&family=Poppins:wght@300;500&family=Sofia+Sans:wght@300&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+
+	
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+</head>
+
+<style>
+	html{
+		font-size: 62.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+	*{
+		color: whitesmoke;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+	}
+	:root{
+
+	--black:#232323;
+	--yellow:#FFBA00;
+	--font1:'Poppins', sans-serif;
+	--para: #adadad;
+	    font2: 'Montserrat', sans-serif;
+
+
+	
+
+
+
+
+}
+	body{
+		background: #232323;
+		color: whitesmoke;
+	}
+	.pp-size{
+
+		display: inline-block;
+		border-radius: 50%;
+		height: 120px;
+		width: 120px;
+		margin-bottom: 2rem;
+
+	}
+	.pp-size:hover{
+		cursor: pointer;
+	}
+	.nav-icon{
+		padding: 0 1rem ;
+		font-size: 2rem;
+		transition: all .3s linear;
+	}
+	.nav-icon:hover{
+		cursor: pointer;
+		opacity: .6;
+		color: var(--yellow);
+	}
+	.flex{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.btn{
+		border: .1px solid white;
+		padding:  .8rem 1.4rem;
+		margin: 1rem;
+		transition: all .4s linear;
+	}
+	.btn:hover{
+		border:.1px solid transparent;
+		transform: translateY(-10px);
+		color: var(--yellow);
+	}
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4rem;
+	}
+	.team{
+		margin: 3rem 8rem;
+
+	}
+	.team-box{
+		padding: 2rem 0;
+		border: .1px solid white;
+	}
+	.data{
+		flex-direction: row;
+		gap: 1rem;
+		font-size: 1rem;
+	}
+	.data p{
+		margin: 1rem 0;
+	}
+	h3{
+		text-align: center;
+		font-size: 2.1rem;
+		font-weight: 600;
+		font-family: var(--font1);
+
+	}
+	.heading{
+		text-align: center;
+		margin: 2rem 0;
+		font-size: 3rem;
+		color: var(--yellow);
+	}
+	@keyframes anime{
+		0%{
+			color: whitesmoke;
+		}
+		50%{
+			color: var(--yellow);
+			
+		}
+		75%{
+			color: white;
+		}
+
+		100%{
+			color: whitesmoke;
+		}
+	}
+
+	footer{
+		margin: 2rem auto;
+		text-align: center;
+
+	}
+	footer a{
+		transition: all 1s linear;
+		animation: anime 1s linear  infinite ;
+	}
+
+	@media (max-width:955px){
+html{
+		font-size: 50.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+	img{
+		height: 70px;
+	}
+	}
+
+
+	
+	@media (max-width:1100px){
+html{
+		font-size: 55.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+	}
+
+		@media (max-width:800px){
+html{
+		font-size: 49.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+	}
+
+
+	@media (max-width:768px){
+html{
+		font-size: 48.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+
+	.grid{
+		max-width: 60%;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 4rem;
+		margin: auto;
+	}
+
+
+
+	}
+
+
+		@media (max-width:508px){
+html{
+		font-size: 34.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+	.grid{
+		margin: 0;
+		max-width: 100%;
+	}
+}
+
+
+		@media (max-width:408px){
+html{
+		font-size: 30.5%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+
+	}
+	img{
+
+	}
+}
+	
+</style>
+<body>
+	
+
+
+
+
+
+	<section class="section team">
+		<h3 class="heading">OUR TEAM</h3>
+		<div class="boxes grid">
+
+			<div class="team-box flex">
+				<img src="img1/pp.jpg" alt="/" class="pp-size">
+				<h3>Prashant Acharya</h3>
+
+				<div class="data flex">
+					<p>156 post</p>
+					<p>1034 likes</p>
+				</div>
+				<div class="icon">
+					<ion-icon name="logo-facebook" class="nav-icon"></ion-icon>
+					<ion-icon name="logo-instagram" class="nav-icon"></ion-icon>
+					<ion-icon name="logo-twitter" class="nav-icon"></ion-icon>
+				</div>
+
+				<div class="btns flex">
+					<a href="" class="btn">Follow</a>
+					<a href="" class="btn">Messege</a>
+				</div>
+			</div>
+
+
+
+			<div class="team-box flex">
+				<img src="img1/man.jpg" alt="/" class="pp-size">
+				<h3>Nirmal Ghimire</h3>
+
+				<div class="data flex">
+					<p>185 post</p>
+					<p>1634 likes</p>
+				</div>
+				<div class="icon">
+					<ion-icon name="logo-facebook" class="nav-icon"></ion-icon>
+					<ion-icon name="logo-instagram" class="nav-icon"></ion-icon>
+					<ion-icon name="logo-twitter" class="nav-icon"></ion-icon>
+				</div>
+
+				<div class="btns flex">
+					<a href="" class="btn">Follow</a>
+					<a href="" class="btn">Messege</a>
+				</div>
+			</div>
+
+
+
+			<div class="team-box flex">
+				<img src="img1/jump.jpg" alt="/" class="pp-size">
+				<h3>Safal Poudel</h3>
+
+				<div class="data flex">
+					<p>126 post</p>
+					<p>4034 likes</p>
+				</div>
+				<div class="icon">
+					<ion-icon name="logo-facebook" class="nav-icon"></ion-icon>
+					<ion-icon name="logo-instagram" class="nav-icon"></ion-icon>
+					<ion-icon name="logo-twitter" class="nav-icon"></ion-icon>
+				</div>
+
+				<div class="btns flex">
+					<a href="" class="btn">Follow</a>
+					<a href="" class="btn">Messege</a>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer >
+		<a href="index.html"> Visit Our Website</a>
+	</footer>
+
+</body>
+</html>
